@@ -5,12 +5,12 @@ but you should be able to pass all of its tests.
 
 Authors: Mark Hays and others.
 """
-##############################################################
+###############################################################################
 # Do not change this file.
 # Tt is intended only as a way to check your code.
-##############################################################
+###############################################################################
 
-import m3_calling_functions_returning_values as m3
+import m4_calling_functions_returning_values as m4
 import sys
 from io import StringIO
 
@@ -23,11 +23,11 @@ def main():
     run_test_fancy_sums_of_digits()
 
 
-######################################################################
+###############################################################################
 # Do not worry about understanding the code below this line.
 # It is used to test your code cleanly, but you are not expected to
 # understand how it works at this point.
-######################################################################
+###############################################################################
 
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits  function. """
@@ -39,7 +39,7 @@ def run_test_sum_of_digits():
     testCases.addTestCase([826], 16, "", [826])
     testCases.addTestCase([83135], 20, "", [83135])
     testCases.addTestCase([1000000], 1, "", [1000000])
-    runTestOnMethod(m3.sum_of_digits, testCases, "sum_of_digits")
+    runTestOnMethod(m4.sum_of_digits, testCases, "sum_of_digits")
 
 
 def run_test_digits_in_cube():
@@ -53,7 +53,7 @@ def run_test_digits_in_cube():
     testCases.addTestCase([12], 18, "", [12])
     testCases.addTestCase([255], 36, "", [255])
     testCases.addTestCase([10000], 1, "", [10000])
-    runTestOnMethod(m3.digits_in_cube, testCases, "digits_in_cube")
+    runTestOnMethod(m4.digits_in_cube, testCases, "digits_in_cube")
 
 
 def run_test_digits_in_power():
@@ -67,7 +67,7 @@ def run_test_digits_in_power():
     testCases.addTestCase([255, 3], 36, "", [255, 3])
     testCases.addTestCase([2, 10], 7, "", [2, 10])
     testCases.addTestCase([1, 10000], 1, "", [1, 10000])
-    runTestOnMethod(m3.digits_in_power, testCases, "digits_in_power")
+    runTestOnMethod(m4.digits_in_power, testCases, "digits_in_power")
 
 
 def run_test_fancy_sums_of_digits():
@@ -80,7 +80,7 @@ def run_test_fancy_sums_of_digits():
     testCases.addTestCase([10], 1, "", [10])
     testCases.addTestCase([2], 19084, "", [2])
     testCases.addTestCase([35], 124309, "", [35])
-    runTestOnMethod(m3.fancy_sums_of_digits, testCases,
+    runTestOnMethod(m4.fancy_sums_of_digits, testCases,
                     "fancy_sums_of_digits")
 
 
@@ -174,9 +174,9 @@ class TestCaseCollection():
         self.expectedPrints.append(expectedPrint)
         self.expectedArgumentsAfter.append(expectedArgsAfter)
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.
-# ----------------------------------------------------------------------
-if __name__ == '__main__':
+# -----------------------------------------------------------------------------
+if __name__ == "__main__":
     main()
